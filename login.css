@@ -55,7 +55,7 @@ body, html {
     display: block;
     margin: 0 auto;
     color: black; 
-    border: 1px solid blueviolet; 
+    border: 3px solid blueviolet; 
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -70,8 +70,8 @@ body, html {
   padding: 10px; 
   margin-bottom: 20px;
   margin-top: 20px;
-  border-color: blueviolet;
   border-radius: 5px;
+  border: 3px solid blueviolet;
 }
 
   .signup-link a { /*cadastro link*/
@@ -91,6 +91,93 @@ body, html {
   }
   
   button[type="submit"]:hover {  /*tom mais escuro ao passar o mouse no avançar*/
+    background-color: #9400d3; 
+    border-color: #9400d3; 
+  }
+
+  /*PAG 1 ACIMA */
+
+  
+  .login-box2 {    /*quadrado central*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; 
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: 550px;
+    border-radius: 5px;
+  }
+
+  .login-box2 p3{   /*textos e-mail, senha e esqueceu sua senha */
+    text-align: left;
+    margin-left: 85px;
+    display: block;
+    margin-bottom: 5px ;
+  }
+
+  .login-box2 h2{     /*título */
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 85px;
+    text-align: left;
+    clear: both;
+  }
+
+  
+  .login-box2 .logo {     /* logo*/
+    width: 54px;        
+    height: 66px;
+    float: left;
+    clear: left;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 60px;
+  }
+  
+  
+  .login-box2 input[type="email"] {
+  margin-bottom: 25px;
+  margin-top: 0px;
+  border-radius: 5px;
+  border: 3px solid blueviolet; 
+  width: 315px;
+}
+
+.senha-input {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  border-radius: 5px;
+  border: 3px solid blueviolet; 
+  padding: 10px;
+  width: 315px;
+}
+
+.senha-input {
+  margin-left: 85px;
+}
+
+  .login-box2 .signup-link a { /*cadastro link*/
+    color: blueviolet; 
+    text-decoration: none;
+  }
+  
+  .login-box2 button[type="submit"] {   /* botão entrar */
+    background-color: blueviolet; 
+    color: white; 
+    border: 1px solid blueviolet; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  
+  .login-box2 button[type="submit"]:hover {  /*tom mais escuro ao passar o mouse no entrar*/
     background-color: #9400d3; 
     border-color: #9400d3; 
   }
