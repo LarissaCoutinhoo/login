@@ -17,7 +17,7 @@
       <p3>E-mail</p3>
       <div class="formcontainer" style="text-align: left; margin-left: 85px;">
         <form action="#" method="POST">
-          <input type="email" name="email" placeholder="E-mail ou nome de usuário" required><br>
+          <input id="emailInput" type="email" name="email" placeholder="E-mail ou nome de usuário" required readonly><br>
         </form>
       </div>
       <p3>Senha</p3>
@@ -29,6 +29,17 @@
         </form>
     </div>
       <p1 class="signup-link"><a href="">Ainda não possui uma conta? Inscreva-se</a></p1>
+
+      <script>
+          window.onload = function() {
+              var urlParams = new URLSearchParams(window.location.search);
+              var email = urlParams.get('email');
+              if (email) {
+                  document.getElementById("emailInput").value = email;
+              }
+          };
+      </script>
     </div>
 </body>
 </html>
+

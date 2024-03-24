@@ -19,20 +19,22 @@
       <p1>OU</p1>
       <form id="loginForm" action="#" method="POST">
         <input id="emailInput" type="email" name="email" placeholder="E-mail ou nome de usuário" required><br>
-        <button type="button" class="avancar-btn" onclick="redirectToSegPage()">Avançar</button>
+        <button type="button" onclick="redirectToSegPage()">Avançar</button>
       </form>
-      <p2 class="signup-link"><a href="">Ainda não possui uma conta? Inscreva-se</a></p2>   
+      <p2 class="signup-link"><a href="">Ainda não possui uma conta? Inscreva-se</a></p2>
+
+      <script>
+          function redirectToSegPage() {
+              var emailInput = document.getElementById("emailInput").value;
+              if (emailInput.trim() !== "") {
+                  window.location.href = "segpag.html?email=" + encodeURIComponent(emailInput);
+              } else {
+                  alert("Por favor, preencha um e-mail válido.");
+              }
+          }
+      </script>
     </div>
 </body>
 </html>
-<script>
-  function redirectToSegPage() {
-      var emailInput = document.getElementById("emailInput");
-      if (emailInput.checkValidity()) {
-          window.location.href = "segpag.html"; 
-      } else {
-          alert("Por favor, preencha um e-mail válido.");
-      }
-  }
-</script> 
+
 
